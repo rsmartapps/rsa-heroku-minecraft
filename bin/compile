@@ -96,8 +96,8 @@ unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 
 echo "done"
 
-minecraft_version=${MINECRAFT_VERSION:-"SPIGOT-1.14.4"}
-minecraft_url=${PAPER:-"https://papermc.io/api/v1/paper/1.14.4/171/download"}
+minecraft_version=${MINECRAFT_VERSION:-"1.15.1"}
+minecraft_url=${PAPER:-"https://papermc.io/api/v1/paper/${minecraft_version}/latest/download"}
 
 echo -n "-----> Installing PaperClipMC ${minecraft_version}... "
 curl -o spigot.jar -s -L $minecraft_url
